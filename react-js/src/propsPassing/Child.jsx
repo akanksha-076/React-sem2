@@ -4,7 +4,7 @@ const Child = ({name,alert}) => {
   return (
     <>
     <div>Child</div>
-    <h1>REndered in child componenr:{name}</h1>
+    <h1>Rendered in child component:{name}</h1>
     <button onClick={alert}>Click</button>
     </>
   )
