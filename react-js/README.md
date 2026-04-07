@@ -1,16 +1,42 @@
-# React + Vite
+# Note
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Frist letter of the component must be capital
+2. Diffing algo and reconciliation
+3. only one comopnent(function) allowed to be default export
+4. Wrap named export components in { }
 
-Currently, two official plugins are available:
+```
+const Demo=()=>{
+    return "hello world"
+}
+export {Demo}
+```
+5. LIFE CYCLE METHOD
+- Class components uses life cycle method to perform multiple task.
+- Lfe cycle method has no unnecessary boilerplate code so the application is getting complex and hard to manage
+>Lifecycle methods : mounting ,updating ,unmounting
+- so thats why we shofted to functional component. 
+6. WE cannot re-render normal variable in JSX.
+7. inside onclick or any event just write the function name,no parenthesis
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## HOOKS
 
-## React Compiler
+ 1. Hooks are function
+ 2. Hooks allows you to use state and other features without writing a class
+>There are 2 rules to use Hooks
+ 1. Only call Hooks at the top level
+ 2. Only call Hooks from react function
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ ```
+ const App = () => {
 
-## Expanding the ESLint configuration
+//Define Hooks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  return (
+    <>
+    </>
+  )
+}
+```
+
+ - We can't rerender or update the value or state declared in normal js variable.

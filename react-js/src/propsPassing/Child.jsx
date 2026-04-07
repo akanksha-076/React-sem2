@@ -8,7 +8,7 @@ const Child = ({name,alert,hi}) => {
     <button onClick={alert}>Click</button>
     <p>Button 2</p>
     <button onClick={hi}>Click ME Too</button>
-    <h2>Byeeee!</h2>
+    <h2>Byeeee! </h2>
     </>
   )
 }
