@@ -40,3 +40,5 @@ export {Demo}
 ```
 
  - We can't rerender or update the value or state declared in normal js variable.
+
+>setCount((prev)=>): Here prev target the latest previous value of the state
