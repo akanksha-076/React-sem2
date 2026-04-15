@@ -4,6 +4,8 @@ import Parent from './propsPassing/Parent'
 // import { UseStateOne } from './Hooks/UseStateOne'
 // import { MultiCounter } from './Hooks/MultiCounter'
 import ShowHide from './Hooks/ShowHide'
+import DarkLight from './Hooks/DarkLight'
+import FormHandeling from './Hooks/FormHandeling'
 const App = () => {
 
 //Hooks
@@ -15,6 +17,8 @@ const App = () => {
     <UseStateOne/> */}
     {/* */}
     <ShowHide/>
+    <DarkLight/>
+    <FormHandeling/>
     </>
    
   )
