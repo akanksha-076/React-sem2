@@ -18,15 +18,13 @@ const UseStateOne = () => {
     console.log(count);
     return (
         <>
-            <div>MultiCounter</div>
-            <>
-                {count.map((counter, index) => (
-                    <div key={index}>
-                        <h1>Count:{counter}</h1>
-                        <button onClick={() => increment(index)}>Increment</button>
+        {count.map((counter, index) => (
+            <div key={index}>
+            <h1>Count:{counter}</h1>
+            <button onClick={() => increment(index)}>Increment</button>
                     </div>
                 ))}
-            </>
+            
             {/* <h1>Count:{count}</h1>
     <button onClick={()=>setCount(count+1)}>Count1</button>
     <h1>Num:{num}</h1>
@@ -36,3 +34,5 @@ const UseStateOne = () => {
 }
 
 export default UseStateOne
+
+// re-render issue useEffect and Form handeling 

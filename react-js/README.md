@@ -42,3 +42,14 @@ export {Demo}
  - We can't rerender or update the value or state declared in normal js variable.
 
 >setCount((prev)=>): Here prev target the latest previous value of the state
+
+## useEffect 
+>It is used to manage all the life cycle methods alone.
+
+ - UI render ho gya -> Abb kuch extra kaam kro 
+
+ -  useEffect will take two parameter (Callback,depedency-array)
+ ```
+ useEffect(()=>{},[])
+ ```
+ - If the depedency array is empty then it will mount only once when the page reload for the frist time.
