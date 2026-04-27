@@ -7,6 +7,7 @@ import Hollywood from './Components/Hollywood'
 import Technology from './Components/Technology'
 import Fitness from './Components/Fitness'
 import Food from './Components/Food'
+import Details from './Components/Details'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/technology" element={<Technology />} />
           <Route path="/fitness" element={<Fitness />} />
           <Route path="/food" element={<Food />} />
+          <Route path="/details/:id" element={<Details />}/>
         </Routes>
       </BrowserRouter>
     </>
