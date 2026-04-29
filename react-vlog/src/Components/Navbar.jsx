@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useContext } from 'react'
+import { ThemeContext } from '../Context/ThemeContext'
 
 import '../App.css'
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const { theme, toggleTheme } = useContext(ThemeContext);
     const location = useLocation();
 
     const navLinks = [
@@ -15,6 +18,11 @@ const Navbar = () => {
         { to: "/fitness", label: "Fitness" },
         { to: "/food", label: "Food" },
     ];
+   
+
+
+
+      
 
     return (
         <nav className="navbar">
@@ -32,6 +40,9 @@ const Navbar = () => {
                 <span></span>
                 <span></span>
             </button>
+             <button onClick={toggleTheme}>
+                Switch to {theme === "light" ? "Dark 🌙" : "Light ☀️"}
+             </button>
 
             <ul className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
                 {navLinks.map(({ to, label }) => (
